@@ -1,0 +1,1 @@
+"use strict";require.config({baseUrl:"/",paths:{jquery:"libs/jquery-1.12.4",template:"libs/template-web",lunbo:"module/lunbo",header:"module/header"},shim:{lunbo:{deps:["jquery"]}}});

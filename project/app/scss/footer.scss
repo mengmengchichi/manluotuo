@@ -1,0 +1,148 @@
+@mixin center{margin-left: auto;margin-right: auto;}
+@mixin font($hpx,$fpx){line-height: $hpx;font-size: $fpx;text-align: center;}
+@mixin border($w,$h){
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: $w;
+    height: $h;
+}
+.links_wrap{
+    width: 100%;
+    .links{
+        width: 1190px;
+        height: 218px;
+        @include center;    
+        background: white;
+        margin-left: 37px;
+        .links_left{
+            float: left;
+            height: 180px;
+            width: 858px;
+            margin-top: 19px;
+            border-right:1px solid #ffad52;
+            .handling_top{
+                width: 835px;
+                height: 78px;
+                border-bottom: 1px solid #FFAD52;
+                text-align:center;
+                li{
+                    float: left;
+                    height: 58px;
+                    width: 225px;
+                    margin-left: 50px;
+                    border-right: 1px solid #FFAD52;
+                }
+                li:nth-last-child(1){
+                    border: none;
+                }
+            }
+            .handling_btm{
+                width: 835px;
+                li{
+                    float:left;
+                    margin-left: 63px;
+                    p{
+                        font-size: 12px;
+                        color: #434a54;
+                        margin-top: 17px;
+                        font-weight: bold;
+                    }
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: #636971;
+                        margin-top: 14px;
+                    }
+                    h4{
+                        width: 194px;
+                        height: 21px;
+                        margin-top: 17px;
+                        font-size: 17px;
+                        font-weight: 500;
+                        color: #434a54;
+                    }
+                    span{
+                        display: block;
+                        margin-top: 6px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        .links_right{
+            float: left;
+            ol{
+                margin-top: 46px;
+                margin-left: 51px;
+                li:nth-child(1){
+                    width: 220px;
+                    em{
+                        font-style: normal;
+                        font-weight: bold;
+                        padding-left: 30px;
+                    }
+                }
+                li:nth-child(2){
+                    img:nth-child(2){
+                        padding-left: 20px;
+                    }
+                }
+                li:nth-child(3){
+                    b{
+                        font-weight: normal;   
+                    }
+                    em{
+                        font-style: normal;
+                        font-weight: normal;
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer_wrap{
+    width: 100%;
+    .footer{
+        width: 1263px;
+        height: 289px;
+        @include center;
+        ul{
+            width: 1190px;
+            margin-left: 36px;
+            li{
+                @include center;
+            }
+            li:nth-child(1){
+                width: 395px;
+                margin-top: 24px;
+            }
+            li:nth-child(2){
+                width: 305px;
+                margin-top: 26px;
+            }
+            li:nth-child(3){
+                width: 505px;
+                margin-top: 26px;
+                a:hover{
+                    color: #ff6204;
+                }
+            }
+            li:nth-child(4){
+                margin-top: 35px;
+                width: 100%;
+                text-align: center;
+                a{
+                    display: inline-block;
+                    margin-left: 7px;
+                    img{
+                        height: 45px;
+                        width: 130px;
+                    }                    
+                }
+            }
+        }
+    }
+}

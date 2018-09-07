@@ -1,1 +1,0 @@
-"use strict";console.log(1),window.onload=function(){document.getElementById("box").onclick=function(){alert("你好:".concat(this.innerHTML))}};
