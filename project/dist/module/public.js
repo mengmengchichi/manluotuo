@@ -1,0 +1,1 @@
+"use strict";define(function(){function t(){}return t.prototype.init=function(){$("#header").load("/html/header.html"),$("#footer").load("/html/footer.html")},new t});

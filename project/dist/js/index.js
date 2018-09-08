@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["jquery","lunbo","header"],function(e,i,n){i.init()})});
+"use strict";require(["config"],function(){require(["jquery","lunbo"],function(i,n){console.log(n),n.init()})});

@@ -1,5 +1,5 @@
 {
-  "name": "gulp-project",
+  "name": "project",
   "version": "1.0.0",
   "description": "第一个版本",
   "main": "index.js",
@@ -20,5 +20,6 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1"
-  }
+  },
+  "dependencies": {}
 }

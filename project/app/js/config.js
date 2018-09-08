@@ -7,12 +7,12 @@ require.config({
 		"template": "libs/template-web",
 //		"url": "module/url",
 		"lunbo":"module/lunbo",
-		"header":"module/header"
+		"Public":"module/public"
 	},
 	shim: {
-//		toast:{
-//			deps:["jquery"]
-//		},
+		Public:{
+			deps:["jquery"]
+		},
 		lunbo:{
 			deps:["jquery"]
 		}

@@ -1,0 +1,124 @@
+@import "base.scss";
+body{height: 917px;background: #f2f2f2;}
+.head{
+    height: 121px;
+    background: #ececec;
+    border-bottom: 1px solid #d9d9d9;
+    a{
+        margin-left: 190px;
+        img{
+            margin-top: 28px;
+        }
+    }
+}
+form{
+    width: 903px;
+    height: 593px;
+    margin: 80px auto;
+    border: 1px solid #e2e2e2;
+    background: white;
+    h3{
+        height: 126px;
+        font-size: 28px;
+        color: #333333;
+        padding-top: 56px;
+        padding-left: 124px;
+        text-align: left;
+        font-weight: normal;
+        em{
+            font-size: 14px;
+            font-style: normal;
+            margin-left: 26px;
+            color: #2e3233;
+        }
+        a{
+            font-size: 14px;
+            color: #FF7800;
+            text-decoration: underline;
+        }
+    }  
+    ul{
+        height: 463px;
+        margin-left: 144px;
+        li{
+          margin-top: 13px;
+          height: 37px;
+          line-height: 37px;
+          i{
+              font-style: normal;
+              font-size: 14px;
+              color: #686d73;
+              display: inline-block;
+              width: 60px;
+              text-align: right;
+           } 
+           input{
+               height: 37px;
+               width: 286px;
+               border: 1px solid #dfdfdf;
+               border-top: 3px solid #DFDFDF;
+               margin-left: 15px;
+               background: #fbfbfb;
+           } 
+           span{
+               color: #ff0000;
+           }
+        }
+        .pwdpower{
+            i{
+                float: left;
+            }
+            div{
+                margin-left: 15px;
+                width: 145px;
+                height: 37px;
+                float: left;
+                p{
+                    width: 33%;
+                    text-align: center;
+                    font-size: 14px;
+                    float: left;
+                }
+            }
+        }
+        .accept{
+            margin-left: 60px;
+            input{
+                width: auto;
+                height: auto;
+            }
+            a{
+                color: blue;
+            }
+        }
+        #submit{
+            width: 132px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            color: #fff5c4;
+            font-size: 14px;
+            background: #ff9a32;
+            border: none;
+            margin-left: 75px;
+            border-radius: 5px;
+        }
+        li:last-child{
+            margin-left: 75px;
+            line-height: 17px;
+            margin-top: 50px;
+            a{
+                font-size: 14px;
+                color: blue;
+                text-decoration: underline;
+                &:hover{
+                    color: #FF6204;
+                }
+            }
+        }
+    } 
+}
+.foot{
+    width: 100%;
+    text-align: center;
+}

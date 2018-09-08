@@ -346,7 +346,42 @@ body{background: #f5f7fa;}
             }
         }
     }
+.side_wrap{
+    .leftside{
+        position: fixed;
+        left: 0;
+        top: 45%;
+        z-index: 999;
+        img{
+            width: 112px;
+            height: 282px;
+        }
+    }
+    .rightside{   
+            position: fixed;
+            right: 5px;
+            top: 45%; 
+            z-index: 999;
+    }
+    .totop{
        
+        position: fixed;
+        bottom: 10%;
+        right: 5%;
+        z-index: 999;
+        a{
+            display: block; 
+            width: 50px;
+            height: 50px;      
+            background: url(../images/index/gotop_on.png) no-repeat center center;
+            background-size: 50px;
+            &:hover{
+                background-image: url(../images/index/gotop_off.png);
+            }
+        }
+  
+    }
+}
 //      .model_area{
 //          margin-top: 10px;
 //          background: white;

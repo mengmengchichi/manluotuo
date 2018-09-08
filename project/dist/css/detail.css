@@ -1,4 +1,85 @@
 @charset "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset, img {
+  border: 0 none; }
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+input, select, textarea, button {
+  vertical-align: middle; }
+
+/* 重置表单控件垂直居中*/
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer; }
+
+/* 重置表单button按钮效果 */
+body {
+  background: #fff; }
+
+/* 重置body 页面背景为白色 */
+body, th, td, input, select, textarea, button {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "微软雅黑", "黑体","宋体";
+  color: #666; }
+
+/* 重置页面文字属性 */
+a {
+  color: #666;
+  text-decoration: none; }
+
+/* 重置链接a标签 */
+a:active, a:hover {
+  text-decoration: none; }
+
+/* 重置链接a标签的鼠标滑动效果 */
+img {
+  vertical-align: top; }
+
+/* 图片在当前行内的垂直位置 */
+ul, ol li {
+  list-style: none; }
+
+li {
+  list-style-type: none; }
+
+input {
+  outline: 0;
+  outline: none; }
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.mb10 {
+  margin-top: 10px; }
+
+.mr10 {
+  margin-left: 10px; }
+
+.main-wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
 .title_wrap {
   width: 100%;
   min-height: 48px;
@@ -204,3 +285,112 @@
             background: #ff6204; }
         .nav_wrap .nav .navlist ul li.clickclass {
           background: #ff6204; }
+
+.links_wrap {
+  width: 100%; }
+  .links_wrap .links {
+    width: 1190px;
+    height: 218px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    margin-left: 37px; }
+    .links_wrap .links .links_left {
+      float: left;
+      height: 180px;
+      width: 858px;
+      margin-top: 19px;
+      border-right: 1px solid #ffad52; }
+      .links_wrap .links .links_left .handling_top {
+        width: 835px;
+        height: 78px;
+        border-bottom: 1px solid #FFAD52;
+        text-align: center; }
+        .links_wrap .links .links_left .handling_top li {
+          float: left;
+          height: 58px;
+          width: 225px;
+          margin-left: 50px;
+          border-right: 1px solid #FFAD52; }
+        .links_wrap .links .links_left .handling_top li:nth-last-child(1) {
+          border: none; }
+      .links_wrap .links .links_left .handling_btm {
+        width: 835px; }
+        .links_wrap .links .links_left .handling_btm li {
+          float: left;
+          margin-left: 63px; }
+          .links_wrap .links .links_left .handling_btm li p {
+            font-size: 12px;
+            color: #434a54;
+            margin-top: 17px;
+            font-weight: bold; }
+          .links_wrap .links .links_left .handling_btm li a {
+            display: block;
+            font-size: 12px;
+            color: #636971;
+            margin-top: 14px; }
+          .links_wrap .links .links_left .handling_btm li h4 {
+            width: 194px;
+            height: 21px;
+            margin-top: 17px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #434a54; }
+          .links_wrap .links .links_left .handling_btm li span {
+            display: block;
+            margin-top: 6px;
+            margin-bottom: 15px; }
+    .links_wrap .links .links_right {
+      float: left; }
+      .links_wrap .links .links_right ol {
+        margin-top: 46px;
+        margin-left: 51px; }
+        .links_wrap .links .links_right ol li:nth-child(1) {
+          width: 220px; }
+          .links_wrap .links .links_right ol li:nth-child(1) em {
+            font-style: normal;
+            font-weight: bold;
+            padding-left: 30px; }
+        .links_wrap .links .links_right ol li:nth-child(2) img:nth-child(2) {
+          padding-left: 20px; }
+        .links_wrap .links .links_right ol li:nth-child(3) b {
+          font-weight: normal; }
+        .links_wrap .links .links_right ol li:nth-child(3) em {
+          font-style: normal;
+          font-weight: normal;
+          padding-left: 30px; }
+
+.footer_wrap {
+  width: 100%; }
+  .footer_wrap .footer {
+    width: 1263px;
+    height: 289px;
+    margin-left: auto;
+    margin-right: auto; }
+    .footer_wrap .footer ul {
+      width: 1190px;
+      margin-left: 36px; }
+      .footer_wrap .footer ul li {
+        margin-left: auto;
+        margin-right: auto; }
+      .footer_wrap .footer ul li:nth-child(1) {
+        width: 395px;
+        margin-top: 24px; }
+      .footer_wrap .footer ul li:nth-child(2) {
+        width: 305px;
+        margin-top: 26px; }
+      .footer_wrap .footer ul li:nth-child(3) {
+        width: 505px;
+        margin-top: 26px; }
+        .footer_wrap .footer ul li:nth-child(3) a:hover {
+          color: #ff6204; }
+      .footer_wrap .footer ul li:nth-child(4) {
+        margin-top: 35px;
+        width: 100%;
+        text-align: center; }
+        .footer_wrap .footer ul li:nth-child(4) a {
+          display: inline-block;
+          margin-left: 7px; }
+          .footer_wrap .footer ul li:nth-child(4) a img {
+            height: 45px;
+            width: 130px; }

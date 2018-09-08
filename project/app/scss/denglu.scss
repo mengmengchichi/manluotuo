@@ -1,3 +1,118 @@
 @import "base.scss";
-body{height: 100%;}
-
+body{height: 917px;background: #f2f2f2;}
+.head{
+    height: 121px;
+    background: #ececec;
+    border-bottom: 1px solid #d9d9d9;
+    a{
+        margin-left: 190px;
+        img{
+            margin-top: 28px;
+        }
+    }
+}
+.content{
+    height: 620px;
+    .left{
+        float: left;
+        width: 721px;
+        img{
+            margin-top: 217px;
+            margin-left: 286px;
+        }
+        h2{
+            margin-top: 34px;
+            margin-left: 286px;
+            font-size: 34px;
+            color: #565656;
+            font-weight: normal;
+        }
+    }
+    form{
+        float: left;
+        width: 402px;
+        height: 495px;
+        border:1px solid #e2e2e2;
+        background: white;
+        margin-top: 80px;
+        overflow: hidden;
+        h3{
+            height: 121px;
+            width: 100%;
+            padding-top: 57px;
+            color: #e68325;
+            font-size: 24px;
+            padding-left:26px;
+            font-weight: normal;        
+        }
+        .user,.pwd{
+            height: 38px;
+            margin-top: 8px;
+            span{
+                display: inline-block;
+                width: 79px;
+                text-align: right;
+                color: #6b6c6e;
+                height: 38px;
+                line-height: 38px;
+            }
+            input{
+                width: 227px;
+                height: 38px;
+                margin-left: 11px;
+                border: 1px solid #dfdfdf;
+                border-top: 3px solid #DFDFDF;
+            }
+        }
+        .check{
+            margin-top: 13px;
+            margin-left: 90px;
+        }
+        #sub{
+            display: block;
+            width: 128px;
+            height: 42px;
+            background: #ff9525;
+            text-align: center;
+            line-height: 42px;
+            margin-top: 15px;
+            margin-left: 90px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 13px;
+            border-radius: 5px;
+        }
+        #qqlogin{
+            margin-left: 90px;
+            vertical-align: middle;           
+            img{
+                margin-top: 9px;
+            }
+        }
+        .findpwd{
+            margin-top: 15px;
+            margin-left: 90px;
+            a{
+                color: #a95b59;
+                &:hover{
+                    color: #FF6204;
+                }
+            }
+        }
+        .regist{
+            width: 400px;
+            height: 105px;
+            margin-top: 30px;
+            border-top: 1px dashed #eeeeee;
+            text-align: center;
+            img{
+                padding-top: 20px;
+            }
+        }
+    }
+}
+.foot{
+    text-align: center;
+    font-size: 14px;
+}

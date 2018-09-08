@@ -1,0 +1,39 @@
+@import "base.scss";
+@import "header.scss";
+@import "footer.scss";
+.content{
+    width: 1190px;
+    border-bottom: 1px solid #ff6f3d;
+    height: 63px;
+    margin-left: 36px;
+    .location{
+        height: 22px;
+        color:#979693;
+        font-size:14px;
+        em{
+            font-style:normal;
+        }   
+    }    
+    h1{
+       font-weight: normal;
+       font-size: 18px;
+       color: #666666; 
+       margin-top: 5px;
+       padding-left: 10px;
+    }
+}
+table{
+    width: 1190px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 36px;
+    thead{
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    tbody{
+        
+    }
+}

@@ -173,6 +173,7 @@ input {
       .header_wrap .header .mobile:hover img:nth-child(2) {
         display: block !important;
         position: absolute;
+        z-index: 500;
         top: 0;
         left: 0; }
     .header_wrap .header #header_login {
@@ -715,3 +716,32 @@ body {
           border: 5px solid rgba(0, 0, 0, 0.05); }
     .nav_wrap .nav_show ul li:nth-child(1) {
       margin: 0; }
+
+.side_wrap .leftside {
+  position: fixed;
+  left: 0;
+  top: 45%;
+  z-index: 999; }
+  .side_wrap .leftside img {
+    width: 112px;
+    height: 282px; }
+
+.side_wrap .rightside {
+  position: fixed;
+  right: 5px;
+  top: 45%;
+  z-index: 999; }
+
+.side_wrap .totop {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 999; }
+  .side_wrap .totop a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/index/gotop_on.png) no-repeat center center;
+    background-size: 50px; }
+    .side_wrap .totop a:hover {
+      background-image: url(../images/index/gotop_off.png); }

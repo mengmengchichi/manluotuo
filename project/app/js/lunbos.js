@@ -6,13 +6,13 @@ define(function(){
             var len = li.length;
             var index = 0;
             var flag = false;
-            var timer;                       
+            var timer;           
+            var btn = ol.children();
             var str = '';
             for (var i = 0;i<len;i++) {
             	str+='<li></li>';
             }
             ol.html(str);
-            var btn = ol.children();
             btn.on('mouseover',function(){
                 if(!flag){
                     flag = true;                     $(this).addClass('ac').siblings().removeClass('ac');;                   li.eq(index).removeClass('z_index').animate({
@@ -29,7 +29,7 @@ define(function(){
                 if(!flag){
                     flag = true;
                     li.eq(index).removeClass('z_index').animate({
-                    	opacity:0                   
+                    	opacity:0;                   
                     },500);
                     index--;                    
                     if(index < 0){
@@ -44,19 +44,18 @@ define(function(){
             next.on('click',function(){
                 if(!flag){
                     flag = true;                   li.eq(index).removeClass('z_index').animate({
-                    	opacity:0                   
+                    	opacity:0;                   
                     },500);
                     index++;
                     if(index >= len){
                     	index = 0;
-	                        	btn.eq(index).addClass('ac').siblings().removeClass('ac');
+	                        btn.eq(index).addClass('ac').siblings().removeClass('ac');
 	li.eq(index).addClass('z_index').animate({
 	                        opacity:1
 	                    },500,function(){
 	                        flag = false;
 	                    }); 
                     }else {
-	                        	btn.eq(index).addClass('ac').siblings().removeClass('ac');                    	
 	li.eq(index).addClass('z_index').animate({
 	                        opacity:1
 	                    },500,function(){
@@ -82,12 +81,11 @@ define(function(){
             div.hover(function(){
                 clearInterval(timer);
             },function(){
-                timer = setInterval(function(){
+                var timer = setInterval(function(){
                     next.trigger('click');
                 },2000);
             })
-        })	
+        })
 	}
 	return new lunbo();
 })
-
