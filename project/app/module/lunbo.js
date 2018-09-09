@@ -15,14 +15,20 @@ define(function(){
             var btn = ol.children();
             btn.on('mouseover',function(){
                 if(!flag){
-                    flag = true;                     $(this).addClass('ac').siblings().removeClass('ac');;                   li.eq(index).removeClass('z_index').animate({
-                    	opacity:0                   
-                    },500);
-                    index = $(this).index();                    li.eq(index).addClass('z_index').animate({
-                        opacity:1
+                	var _this = $(this);
+                    flag = true;                     
+                    $(this).addClass('ac').siblings().removeClass('ac');
+                    li.eq(index).removeClass('z_index').animate({
+                    	opacity:0                 
+                    },500,function(){
+ 
+                    });
+                    index = _this.index();
+                	li.eq(index).addClass('z_index').animate({
+                    opacity:1
                     },500,function(){
                         flag = false;
-                    });
+                    }); 
                 }               
             })
             prev.on('click',function(){
@@ -34,7 +40,9 @@ define(function(){
                     index--;                    
                     if(index < 0){
                         index = len -1;
-                    }                   btn.eq(index).addClass('ac').siblings().removeClass('ac');                                   li.eq(index).addClass('z_index').animate({
+                    }                   
+                    btn.eq(index).addClass('ac').siblings().removeClass('ac');                                   
+                    li.eq(index).addClass('z_index').animate({
                         opacity:1
                     },500,function(){
                         flag = false;
@@ -43,21 +51,22 @@ define(function(){
             })
             next.on('click',function(){
                 if(!flag){
-                    flag = true;                   li.eq(index).removeClass('z_index').animate({
+                    flag = true;                   
+                    li.eq(index).removeClass('z_index').animate({
                     	opacity:0                   
                     },500);
                     index++;
                     if(index >= len){
-                    	index = 0;
-	                        	btn.eq(index).addClass('ac').siblings().removeClass('ac');
-	li.eq(index).addClass('z_index').animate({
+                    	index = 0;    	
+	                    btn.eq(index).addClass('ac').siblings().removeClass('ac');
+						li.eq(index).addClass('z_index').animate({
 	                        opacity:1
 	                    },500,function(){
 	                        flag = false;
 	                    }); 
                     }else {
-	                        	btn.eq(index).addClass('ac').siblings().removeClass('ac');                    	
-	li.eq(index).addClass('z_index').animate({
+						btn.eq(index).addClass('ac').siblings().removeClass('ac');                    	
+						li.eq(index).addClass('z_index').animate({
 	                        opacity:1
 	                    },500,function(){
 	                        flag = false;

@@ -19,7 +19,7 @@ body{background: #f5f7fa;}
     .concent{
         min-height: 4000px;
         width: 1190px;
-        margin-left: 36px;       
+        @include center;     
         .special_area,.Garage,.model_area{
             margin-top: 10px;
             background: white;
@@ -242,7 +242,7 @@ body{background: #f5f7fa;}
             height: 410px;
             position: absolute;  
             top: 55px;     
-            left: 277px;
+            left: 475px;
             .icon_left{
                 height: 410px;
                 min-width: 42px;
@@ -287,7 +287,8 @@ body{background: #f5f7fa;}
                 li{
                     position: absolute;
                     width: 950px;
-                    height: 410px;                
+                    height: 410px;
+                    opacity: 0;               
                 }
                 li.z_index{z-index: 50;}
             }
@@ -315,7 +316,7 @@ body{background: #f5f7fa;}
             position: absolute;
             width: 950px;
             height: 100px;
-            left: 278px;
+            left: 475px;
             top: 471px;
             ul{
                 li{

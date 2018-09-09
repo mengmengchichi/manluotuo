@@ -7,13 +7,21 @@ require.config({
 		"template": "libs/template-web",
 //		"url": "module/url",
 		"lunbo":"module/lunbo",
-		"Public":"module/public"
+		"Public":"module/public",
+		"header":"module/header",
+		"denglu":"module/denglu"
 	},
 	shim: {
 		Public:{
 			deps:["jquery"]
 		},
 		lunbo:{
+			deps:["jquery"]
+		},
+		header:{
+			deps:["jquery"]
+		},
+		denglu:{
 			deps:["jquery"]
 		}
 	}

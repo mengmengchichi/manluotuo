@@ -197,6 +197,8 @@ input {
       float: left;
       position: relative;
       margin-left: 37px; }
+      .nav_wrap .nav .kindlist:hover ul {
+        display: block; }
       .nav_wrap .nav .kindlist p {
         height: 45px;
         width: 230px;
@@ -293,8 +295,7 @@ input {
     height: 218px;
     margin-left: auto;
     margin-right: auto;
-    background: white;
-    margin-left: 37px; }
+    background: white; }
     .links_wrap .links .links_left {
       float: left;
       height: 180px;
@@ -403,7 +404,8 @@ body {
   .concent_wrap .concent {
     min-height: 4000px;
     width: 1190px;
-    margin-left: 36px; }
+    margin-left: auto;
+    margin-right: auto; }
     .concent_wrap .concent .special_area, .concent_wrap .concent .Garage, .concent_wrap .concent .model_area {
       margin-top: 10px;
       background: white;
@@ -633,7 +635,7 @@ body {
     height: 410px;
     position: absolute;
     top: 55px;
-    left: 277px; }
+    left: 475px; }
     .nav_wrap #lunbo .icon_left {
       height: 410px;
       min-width: 42px;
@@ -669,7 +671,8 @@ body {
     .nav_wrap #lunbo ul li {
       position: absolute;
       width: 950px;
-      height: 410px; }
+      height: 410px;
+      opacity: 0; }
     .nav_wrap #lunbo ul li.z_index {
       z-index: 50; }
     .nav_wrap #lunbo ol {
@@ -694,7 +697,7 @@ body {
     position: absolute;
     width: 950px;
     height: 100px;
-    left: 278px;
+    left: 475px;
     top: 471px; }
     .nav_wrap .nav_show ul li {
       margin-left: 10px;

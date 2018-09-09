@@ -116,6 +116,8 @@
       float: left;
       position: relative;
       margin-left: 37px; }
+      .nav_wrap .nav .kindlist:hover ul {
+        display: block; }
       .nav_wrap .nav .kindlist p {
         height: 45px;
         width: 230px;

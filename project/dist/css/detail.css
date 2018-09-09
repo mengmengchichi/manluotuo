@@ -197,6 +197,8 @@ input {
       float: left;
       position: relative;
       margin-left: 37px; }
+      .nav_wrap .nav .kindlist:hover ul {
+        display: block; }
       .nav_wrap .nav .kindlist p {
         height: 45px;
         width: 230px;
@@ -293,8 +295,7 @@ input {
     height: 218px;
     margin-left: auto;
     margin-right: auto;
-    background: white;
-    margin-left: 37px; }
+    background: white; }
     .links_wrap .links .links_left {
       float: left;
       height: 180px;
@@ -394,3 +395,6 @@ input {
           .footer_wrap .footer ul li:nth-child(4) a img {
             height: 45px;
             width: 130px; }
+
+.kindlist ul {
+  display: none; }

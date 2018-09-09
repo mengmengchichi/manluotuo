@@ -1,0 +1,1 @@
+"use strict";define(function(){function i(){}return i.prototype.init=function(){$(function(){$(".navlist ul li").on("click",function(){$(this).addClass("clickclass").siblings().removeClass("clickclass")})})},new i});

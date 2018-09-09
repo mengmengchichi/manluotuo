@@ -1,0 +1,1 @@
+"use strict";define(function(){$("#sub").on("click",function(){var n=$("#username").val(),e=$("#pwd").val();$.post("denglu.php",{username:n,pwd:e},function(){},"json")})});

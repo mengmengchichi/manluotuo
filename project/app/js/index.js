@@ -1,7 +1,7 @@
 require(["config"],function(){
 	//再引入依赖的模块
-	require(["jquery","lunbo"],function($,lunbo){
-		console.log(lunbo);
+	require(["jquery","lunbo","header"],function($,lunbo,header){
+		header.init();
 		lunbo.init();
 	})
 })

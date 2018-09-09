@@ -1,0 +1,1 @@
+"use strict";require(["config"],function(){require(["Public"],function(i){console.log(i),i.init()})});
