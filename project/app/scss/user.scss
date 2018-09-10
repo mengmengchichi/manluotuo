@@ -1,0 +1,66 @@
+@import "base.scss";
+@import "header.scss";
+@import "footer.scss";
+.kindlist ul{display: none;}
+.blank{height: 0;}
+.content{
+    width: 1190px;
+    margin: 0 auto;
+    .content_header{
+        height: 42px;
+        line-height: 42px;
+        h2{
+            font-weight: normal;
+            font-size: 14px;
+            color: #8f989d;
+            a{
+                color: #8f989d;
+            }
+        }
+    }
+    .content_con{
+        width: 100%;
+        .content_left{
+            float: left;
+            width: 167px;
+            li{
+                height: 32px;
+                line-height: 32px;
+                text-indent: 25px;
+                background: white;
+                margin-bottom: 2px;
+                a{
+                    display: block;
+                    width: 100%;
+                    color: #3f3f3d;
+                }
+            }
+        }
+        .content_right{
+            width: 950px;
+            float: left;
+            margin-left: 63px;
+            background: white;
+            h3{
+                height: 42px;
+                font-weight: normal;
+                color: #5f707a;
+                line-height: 42px;
+                text-indent: 7px;
+            }
+            p{
+                color: #5d7081;
+                font-size: 16px;
+                text-indent: 7px;
+                margin-bottom: 15px;
+                a{
+                    color: #2c6291;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+#footer{
+    float: left;
+}

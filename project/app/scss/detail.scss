@@ -2,3 +2,213 @@
 @import "header.scss";
 @import "footer.scss";
 .kindlist ul{display: none;}
+.blank{height:0;}
+.content_detail{
+    width: 1190px;
+    margin-left: 36px;
+    .now_here{
+        height: 42px;
+        font-size: 14px;
+        line-height: 42px;
+        color: #979693;
+        a{
+            color: #979693;
+        }
+    }
+    .goods_detail{
+        height: 615px;
+        width: 100%;
+        background: white;       
+        .goods_preview{
+            width: 770px;
+            border-right: 1px solid #eeeeee;
+            float: left;
+            position: relative;
+            .big_preview{
+                width: 510px;
+                height: 510px;
+                margin: 0 auto;
+            }
+        }
+        .goods_preview .icon_left{
+            height: 510px;
+            min-width: 42px;
+            position: absolute;
+            left: 0px; 
+            top: 0;
+            z-index: 200;
+            span{
+                display: inline-block;
+                height: 69px;
+                width: 42px;
+                position: absolute;              
+                top: 220px;
+                background: url(/images/index/icon-slides-2.png) no-repeat -83px 0px;
+                &:hover {
+                    background-position-x: 0px;
+                    opacity: .6;
+                }
+            }
+        }
+        .icon_right{
+            height: 510px;
+            min-width: 42px;
+            position: absolute;
+            right: 0;
+            top: 0;            
+            z-index: 200;
+            span{
+                display: inline-block;
+                height: 69px;
+                width: 42px;
+                position: absolute;
+                top: 220px;
+                background: url(/images/index/icon-slides-2.png) no-repeat -124px 0px;
+                &:hover {
+                    background-position-x: -43px;
+                    opacity: .6;
+                }
+            }
+        }
+        .small_preview{
+            ul{
+                width: 510px;
+                height: 66px;
+                text-align: center;
+                margin: 0 auto;
+                li{
+                    display: inline-block;
+                    margin: 0 5px;
+                    cursor: pointer;
+                    border: 3px solid #cccccc;
+                    border-radius: 5px;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+            
+        }
+        .goods_text{
+            float: left;
+            width: 390px;
+            margin-left: 20px;
+            &>h2{
+                min-height: 85px;
+                margin-top: 40px;
+                font-size: 22px;
+                line-height: 50px;
+                border-bottom: 1px solid #ededed;
+            }
+            &>ul{
+                height: 466px;
+                margin-top: 20px;
+                li{
+                    color:#b9b8c8;
+                    margin-bottom: 17px;
+                    #nowprice{
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #ed5f11;
+                    }
+                    span,del{
+                        display: inline-block;
+                        width: 97px;
+                    }
+                    #mancount{
+                        width: auto;
+                        color: #b8b8b8;
+                    }
+                    i{
+                        font-style: normal;
+                        margin-left: 62px;
+                    }
+                }
+                li:nth-child(4){
+                    line-height: 28px;
+                    a{
+                        text-align: center;
+                        display: inline-block;
+                        width: 66px;
+                        height: 28px;
+                        border: 1px solid #fe6700;
+                    }
+                    &+li{
+                        input{
+                            width: 52px;
+                            height: 20px;
+                            border: 1px solid #e6e9ee;
+                        }
+                        a{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        span{
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #ed5f11;
+                        }
+                        &+li{
+                            margin-top: 26px;
+                            &>img{
+                                margin-top: 1px;
+                                cursor: pointer;
+                            }
+                            a{
+                                margin-left: 13px;
+                            }
+                            &+li{
+                                img{
+                                    width: 161px;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+.map_wrap{
+    width: 1190px;
+    margin: 0 auto;
+}
+.tab{
+    width: 950px;
+    background: white;
+    margin-left: 277px;
+    margin-top: 10px;
+    &>h2{
+        height: 72px;
+        margin-left: 20px;
+        p{
+            float: left;
+            margin: 15px 0;
+            padding: 0 20px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-weight: normal;
+            cursor: pointer;
+            &:hover{
+                color: #FF6633;
+            }
+        }
+        p:nth-child(2){
+            border-left: 1px solid #eeeeee;
+            border-right: 1px solid #eeeeee;
+            
+        }
+    }
+    div{
+        display: none;
+        text-align: center;
+    }
+    div.show{
+        display: block;
+    }
+}
+.footer{
+    float: right;
+} 

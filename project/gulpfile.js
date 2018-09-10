@@ -33,6 +33,12 @@ gulp.task("css", function(){
 
 })
 
+gulp.task("php",function(){
+	gulp.src("app/php/**/*.php")
+	.pipe(gulp.dest("dist/php"))
+	.pipe(connect.reload());
+});
+
 gulp.task("js", function(){
 	gulp.src(["app/js/*.js","!app/libs/*.js"])
 	.pipe(babel({
@@ -69,6 +75,7 @@ gulp.task("watch", function(){
 	gulp.watch("app/css/**/*.css",["css"]);
 	gulp.watch("app/**/*.html",["html"]);
 	gulp.watch("app/scss/**/*.scss",["sass"]);
+	gulp.watch("app/php/*.php",["php"]);
 });
 
 //处理图片，位置迁移
@@ -91,6 +98,6 @@ gulp.task("sass", function(){
 	.pipe(connect.reload());
 })
 
-gulp.task("default",["server","html","js","module","css","watch","img","sass","libs"]);
+gulp.task("default",["server","html","js","module","css","watch","img","sass","libs","php"]);
 
 

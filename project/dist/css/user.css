@@ -399,31 +399,58 @@ input {
             height: 45px;
             width: 130px; }
 
+.kindlist ul {
+  display: none; }
+
+.blank {
+  height: 0; }
+
 .content {
   width: 1190px;
-  border-bottom: 1px solid #ff6f3d;
-  height: 63px;
-  margin-left: 36px; }
-  .content .location {
-    height: 22px;
-    color: #979693;
-    font-size: 14px; }
-    .content .location em {
-      font-style: normal; }
-  .content h1 {
-    font-weight: normal;
-    font-size: 18px;
-    color: #666666;
-    margin-top: 5px;
-    padding-left: 10px; }
+  margin: 0 auto; }
+  .content .content_header {
+    height: 42px;
+    line-height: 42px; }
+    .content .content_header h2 {
+      font-weight: normal;
+      font-size: 14px;
+      color: #8f989d; }
+      .content .content_header h2 a {
+        color: #8f989d; }
+  .content .content_con {
+    width: 100%; }
+    .content .content_con .content_left {
+      float: left;
+      width: 167px; }
+      .content .content_con .content_left li {
+        height: 32px;
+        line-height: 32px;
+        text-indent: 25px;
+        background: white;
+        margin-bottom: 2px; }
+        .content .content_con .content_left li a {
+          display: block;
+          width: 100%;
+          color: #3f3f3d; }
+    .content .content_con .content_right {
+      width: 950px;
+      float: left;
+      margin-left: 63px;
+      background: white; }
+      .content .content_con .content_right h3 {
+        height: 42px;
+        font-weight: normal;
+        color: #5f707a;
+        line-height: 42px;
+        text-indent: 7px; }
+      .content .content_con .content_right p {
+        color: #5d7081;
+        font-size: 16px;
+        text-indent: 7px;
+        margin-bottom: 15px; }
+        .content .content_con .content_right p a {
+          color: #2c6291;
+          font-size: 12px; }
 
-table {
-  width: 1190px;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-left: 36px; }
-  table thead {
-    height: 30px;
-    line-height: 30px;
-    text-align: center; }
+#footer {
+  float: left; }

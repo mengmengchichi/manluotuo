@@ -20,7 +20,7 @@ button {
 
 /* 重置表单button按钮效果 */
 body {
-  background: #fff; }
+  background: #f6f7fb; }
 
 /* 重置body 页面背景为白色 */
 body, th, td, input, select, textarea, button {
@@ -190,7 +190,6 @@ input {
   position: relative; }
   .nav_wrap .nav {
     width: 1263px;
-    height: 572px;
     margin-left: auto;
     margin-right: auto; }
     .nav_wrap .nav .kindlist {
@@ -267,14 +266,15 @@ input {
     .nav_wrap .nav .navlist {
       float: right;
       margin-right: 36px;
-      background: #ffad52; }
-      .nav_wrap .nav .navlist ul {
+      background: #ffad52;
+      position: relative; }
+      .nav_wrap .nav .navlist > ul {
         width: 960px;
         min-height: 45px;
         border-radius: 8px; }
-        .nav_wrap .nav .navlist ul li {
+        .nav_wrap .nav .navlist > ul li {
           float: left; }
-          .nav_wrap .nav .navlist ul li a {
+          .nav_wrap .nav .navlist > ul li a {
             line-height: 45px;
             font-size: 18px;
             text-align: center;
@@ -283,10 +283,13 @@ input {
             width: 100px;
             height: 45px;
             color: white; }
-          .nav_wrap .nav .navlist ul li:hover {
+          .nav_wrap .nav .navlist > ul li:hover {
             background: #ff6204; }
-        .nav_wrap .nav .navlist ul li.clickclass {
+        .nav_wrap .nav .navlist > ul li.clickclass {
           background: #ff6204; }
+
+.blank {
+  height: 527px; }
 
 .links_wrap {
   width: 100%; }
@@ -395,6 +398,9 @@ input {
           .footer_wrap .footer ul li:nth-child(4) a img {
             height: 45px;
             width: 130px; }
+
+.blank {
+  height: 527px; }
 
 body {
   background: #f5f7fa; }
@@ -635,7 +641,7 @@ body {
     height: 410px;
     position: absolute;
     top: 55px;
-    left: 475px; }
+    left: 10px; }
     .nav_wrap #lunbo .icon_left {
       height: 410px;
       min-width: 42px;
@@ -693,31 +699,33 @@ body {
         opacity: .2; }
       .nav_wrap #lunbo ol li.ac {
         opacity: .8; }
-  .nav_wrap .nav_show {
+  .nav_wrap .nav .nav_show {
     position: absolute;
     width: 950px;
     height: 100px;
-    left: 475px;
+    left: 10px;
     top: 471px; }
-    .nav_wrap .nav_show ul li {
+    .nav_wrap .nav .nav_show ul li {
       margin-left: 10px;
       float: left;
-      position: relative; }
-      .nav_wrap .nav_show ul li a {
+      position: relative;
+      width: 230px; }
+      .nav_wrap .nav .nav_show ul li a {
         width: 230px;
         box-sizing: border-box;
         display: inline-block;
         height: 100px;
         text-align: center; }
-        .nav_wrap .nav_show ul li a:hover:before {
+        .nav_wrap .nav .nav_show ul li a:hover:before {
           position: absolute;
+          z-index: 10;
           top: 0;
           left: 0;
           content: "";
           width: 220px;
           height: 90px;
           border: 5px solid rgba(0, 0, 0, 0.05); }
-    .nav_wrap .nav_show ul li:nth-child(1) {
+    .nav_wrap .nav .nav_show ul li:nth-child(1) {
       margin: 0; }
 
 .side_wrap .leftside {

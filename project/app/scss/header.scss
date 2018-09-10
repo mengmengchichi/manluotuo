@@ -136,7 +136,7 @@
     position: relative;
     .nav{
         width: 1263px;
-        height: 572px;
+//      height: 572px;
         @include center;
         
         .kindlist{
@@ -211,7 +211,8 @@
             float: right;
             margin-right: 36px;
             background: #ffad52;
-            ul{
+            position: relative;
+            &>ul{
                 width: 960px;
                 min-height: 45px;
                 border-radius: 8px;
@@ -235,4 +236,7 @@
             }
         }
     }
+}
+.blank{
+    height: 527px;
 }

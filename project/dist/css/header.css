@@ -109,7 +109,6 @@
   position: relative; }
   .nav_wrap .nav {
     width: 1263px;
-    height: 572px;
     margin-left: auto;
     margin-right: auto; }
     .nav_wrap .nav .kindlist {
@@ -186,14 +185,15 @@
     .nav_wrap .nav .navlist {
       float: right;
       margin-right: 36px;
-      background: #ffad52; }
-      .nav_wrap .nav .navlist ul {
+      background: #ffad52;
+      position: relative; }
+      .nav_wrap .nav .navlist > ul {
         width: 960px;
         min-height: 45px;
         border-radius: 8px; }
-        .nav_wrap .nav .navlist ul li {
+        .nav_wrap .nav .navlist > ul li {
           float: left; }
-          .nav_wrap .nav .navlist ul li a {
+          .nav_wrap .nav .navlist > ul li a {
             line-height: 45px;
             font-size: 18px;
             text-align: center;
@@ -202,7 +202,10 @@
             width: 100px;
             height: 45px;
             color: white; }
-          .nav_wrap .nav .navlist ul li:hover {
+          .nav_wrap .nav .navlist > ul li:hover {
             background: #ff6204; }
-        .nav_wrap .nav .navlist ul li.clickclass {
+        .nav_wrap .nav .navlist > ul li.clickclass {
           background: #ff6204; }
+
+.blank {
+  height: 527px; }

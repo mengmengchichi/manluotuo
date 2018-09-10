@@ -9,7 +9,8 @@ require.config({
 		"lunbo":"module/lunbo",
 		"Public":"module/public",
 		"header":"module/header",
-		"denglu":"module/denglu"
+		"denglu":"module/denglu",
+		"regist":"module/regist"
 	},
 	shim: {
 		Public:{
@@ -22,6 +23,9 @@ require.config({
 			deps:["jquery"]
 		},
 		denglu:{
+			deps:["jquery"]
+		},
+		regist:{
 			deps:["jquery"]
 		}
 	}
