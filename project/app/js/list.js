@@ -1,5 +1,9 @@
 require(["config"],function(){
-	require(["Public"],function(Public){
-		Public.init();
+	require(["jquery","Public","listload","template"],function($,Public,list,template){
+		$(function(){
+			Public.init();
+			list.listload(template);
+			//list.init();
+		})		
 	})
 })

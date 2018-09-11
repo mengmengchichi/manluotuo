@@ -1,5 +1,8 @@
 require(["config"],function(){
-	require(["Public"],function(Public){
-		Public.init();
+	require(["jquery","denglu","Public"],function($,login,Public){		
+		$(function(){
+			login();
+			Public.init();
+		})		
 	})
 })

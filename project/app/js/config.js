@@ -10,7 +10,9 @@ require.config({
 		"Public":"module/public",
 		"header":"module/header",
 		"denglu":"module/denglu",
-		"regist":"module/regist"
+		"regist":"module/regist",
+		"md5":"libs/md5",
+		"listload":"module/listload"
 	},
 	shim: {
 		Public:{
@@ -23,10 +25,13 @@ require.config({
 			deps:["jquery"]
 		},
 		denglu:{
-			deps:["jquery"]
+			deps:["jquery","md5"]
 		},
 		regist:{
-			deps:["jquery"]
+			deps:["jquery","md5"]
+		},
+		listload:{
+			deps:["jquery","template"]
 		}
 	}
 })

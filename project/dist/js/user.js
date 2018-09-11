@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["Public"],function(i){i.init()})});
+"use strict";require(["config"],function(){require(["jquery","denglu","Public"],function(i,n,u){i(function(){n(),u.init()})})});

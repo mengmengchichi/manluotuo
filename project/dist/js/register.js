@@ -1,0 +1,1 @@
+"use strict";require(["config"],function(){require(["jquery","regist"],function(i,e){i(function(){e()})})});

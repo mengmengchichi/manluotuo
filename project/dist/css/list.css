@@ -399,6 +399,9 @@ input {
             height: 45px;
             width: 130px; }
 
+.blank {
+  height: 705px !important; }
+
 .content {
   width: 950px;
   border-radius: 5px;
@@ -511,6 +514,7 @@ input {
           width: 195px;
           font-size: 14px;
           text-align: center;
+          height: 36px;
           overflow: hidden;
           font-weight: normal;
           line-height: 1.3; }
@@ -542,15 +546,18 @@ input {
   .content .content_footer {
     height: 92px;
     background: white; }
-    .content .content_footer form .pagechange {
+    .content .content_footer .pagechange {
       padding-top: 30px;
       text-align: center; }
-      .content .content_footer form .pagechange a {
+      .content .content_footer .pagechange a, .content .content_footer .pagechange span {
         font-size: 14px;
         display: inline-block;
         padding: 5px 10px;
-        border: 1px solid #e6e9ed; }
-      .content .content_footer form .pagechange a.pageclick {
+        border: 1px solid #e6e9ed;
+        margin-left: 3px; }
+      .content .content_footer .pagechange span {
+        color: #ccd1d9; }
+      .content .content_footer .pagechange a.pageclick {
         background: #ff6204;
         color: white; }
 

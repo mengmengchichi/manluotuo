@@ -1,6 +1,7 @@
 @import "base.scss";
 @import "header.scss";
 @import "footer.scss";
+.blank{height: 705px !important;}
 .content{
     width: 950px;
     border-radius:5px;
@@ -135,11 +136,13 @@
                             width: 195px;
                             font-size: 14px;
                             text-align: center;
+                            height: 36px;
                             overflow: hidden;
                             font-weight: normal;
                             line-height: 1.3;
                             a{
                                 color: #484850;
+                                
                                 &:hover{
                                     color: #ff6204;
                                 }
@@ -180,14 +183,18 @@
     .content_footer{
         height: 92px;
         background: white;
-        form .pagechange{
+        .pagechange{
             padding-top: 30px;
             text-align: center;            
-            a{
+            a,span{
                 font-size: 14px;
                 display: inline-block;
                 padding: 5px 10px;
                 border: 1px solid #e6e9ed;
+                margin-left: 3px;
+            }
+            span{
+                color: #ccd1d9;
             }
             a.pageclick{
                 background: #ff6204;
