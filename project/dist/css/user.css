@@ -418,7 +418,8 @@ input {
       .content .content_header h2 a {
         color: #8f989d; }
   .content .content_con {
-    width: 100%; }
+    width: 1190px;
+    height: 400px; }
     .content .content_con .content_left {
       float: left;
       width: 167px; }
@@ -453,4 +454,5 @@ input {
           font-size: 12px; }
 
 #footer {
-  float: left; }
+  width: 100%;
+  margin: 0 auto; }

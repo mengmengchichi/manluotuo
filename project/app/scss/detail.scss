@@ -3,9 +3,14 @@
 @import "footer.scss";
 .kindlist ul{display: none;}
 .blank{height:0;}
+.content_wrap{
+    width: 1190px;
+    min-height: 1px;
+    margin: 0 auto;
+}
 .content_detail{
     width: 1190px;
-    margin-left: 36px;
+   margin: 0 auto;
     .now_here{
         height: 42px;
         font-size: 14px;
@@ -177,7 +182,7 @@
 .tab{
     width: 950px;
     background: white;
-    margin-left: 277px;
+    margin-left: 240px;
     margin-top: 10px;
     &>h2{
         height: 72px;
@@ -209,6 +214,6 @@
         display: block;
     }
 }
-.footer{
-    float: right;
+#footer{
+    margin-top: 30px;
 } 

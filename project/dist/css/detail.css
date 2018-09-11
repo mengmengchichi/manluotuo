@@ -405,9 +405,14 @@ input {
 .blank {
   height: 0; }
 
+.content_wrap {
+  width: 1190px;
+  min-height: 1px;
+  margin: 0 auto; }
+
 .content_detail {
   width: 1190px;
-  margin-left: 36px; }
+  margin: 0 auto; }
   .content_detail .now_here {
     height: 42px;
     font-size: 14px;
@@ -541,7 +546,7 @@ input {
 .tab {
   width: 950px;
   background: white;
-  margin-left: 277px;
+  margin-left: 240px;
   margin-top: 10px; }
   .tab > h2 {
     height: 72px;
@@ -566,5 +571,5 @@ input {
   .tab div.show {
     display: block; }
 
-.footer {
-  float: right; }
+#footer {
+  margin-top: 30px; }

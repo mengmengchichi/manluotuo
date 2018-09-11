@@ -2,13 +2,19 @@
 @import "header.scss";
 @import "footer.scss";
 .blank{height: 705px !important;}
+.content_wrap{
+    width: 1190px;
+    min-height: 1px;
+    margin: 0 auto;
+    position: relative;
+}
 .content{
     width: 950px;
     border-radius:5px;
     min-height: 1px;
     position: absolute;
-    left: 277px;
-    top: 208px;
+    left: 240px;
+    top: -650px;
     .content_header{
         background-color:white;
         h3{

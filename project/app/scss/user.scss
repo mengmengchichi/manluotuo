@@ -19,7 +19,8 @@
         }
     }
     .content_con{
-        width: 100%;
+        width: 1190px;
+        height: 400px;
         .content_left{
             float: left;
             width: 167px;
@@ -62,5 +63,6 @@
     }
 }
 #footer{
-    float: left;
+    width: 100%;
+    margin: 0 auto;
 }
