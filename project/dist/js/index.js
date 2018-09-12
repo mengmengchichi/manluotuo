@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["jquery","lunbo","header","listload","template"],function(i,e,t,n,r){t.init(),e.init(),n.listClick()})});
+"use strict";require(["config"],function(){require(["jquery","lunbo","header","listload","template","detail"],function(i,t,e,n,r,u){i(function(){e.init(),t.init(),n.listClick(r),u.writeid()})})});

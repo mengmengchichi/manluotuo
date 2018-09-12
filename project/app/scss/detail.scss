@@ -117,7 +117,10 @@
                         font-weight: bold;
                         color: #ed5f11;
                     }
-                    span,del{
+                    span{
+                        display: inline-block;
+                    }
+                    del{
                         display: inline-block;
                         width: 97px;
                     }
@@ -143,6 +146,7 @@
                         input{
                             width: 52px;
                             height: 20px;
+                            text-align: center;
                             border: 1px solid #e6e9ee;
                         }
                         a{
@@ -153,6 +157,9 @@
                             font-size: 18px;
                             font-weight: bold;
                             color: #ed5f11;
+                        }
+                        i{
+                            margin-left: 5px;
                         }
                         &+li{
                             margin-top: 26px;

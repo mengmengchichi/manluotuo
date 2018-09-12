@@ -1,6 +1,9 @@
 @import "base.scss";
 @import "header.scss";
 @import "footer.scss";
+.kindlist ul{display: none;}
+.blank{height: 60px !important;}
+#footer{margin-top: 40px;}
 .content{
     width: 1190px;
     border-bottom: 1px solid #ff6f3d;
@@ -28,12 +31,56 @@ table{
     font-size: 14px;
     margin-top: 5px;
     margin-left: 36px;
-    thead{
+    thead tr th{
         height: 30px;
         line-height: 30px;
         text-align: center;
     }
-    tbody{
-        
+    tbody tr td:last-child{
+        a{
+            color: #F60;
+        }
+    }    
+}
+.actioncart {
+    tbody tr td{
+        height: 32px;
+        background: white;
+        border-top: 1px solid #CCD1D9;
+        border-bottom: 1px solid #CCD1D9;
+    }
+    input{
+        height: 22px;
+        width: 85px;
+        background: #fe683e;
+        border: none;
+        float: left;
+        margin-left: 8px;
+        color: white;
+        cursor: pointer;
+    }
+}
+.actioncart tbody tr:nth-child(2){
+    td{
+        height: 46px;
+        vertical-align: middle;
+        border: none;
+        a{
+            display: inline-block;
+            width: 140px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            float: right;
+            margin-right: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+        a:nth-child(2){
+            background: #656d78;
+        }
+        a:nth-child(1){
+            background: #ff6204;
+        }
     }
 }

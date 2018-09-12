@@ -221,7 +221,8 @@ input {
       .nav_wrap .nav .kindlist ul {
         position: absolute;
         min-height: 528px;
-        background: #ffffff; }
+        background: #ffffff;
+        z-index: 300; }
         .nav_wrap .nav .kindlist ul li:hover {
           background: #fcf5de; }
         .nav_wrap .nav .kindlist ul li i {
@@ -333,6 +334,8 @@ input {
             font-size: 12px;
             color: #636971;
             margin-top: 14px; }
+            .links_wrap .links .links_left .handling_btm li a:hover {
+              color: #ff6204; }
           .links_wrap .links .links_left .handling_btm li h4 {
             width: 194px;
             height: 21px;

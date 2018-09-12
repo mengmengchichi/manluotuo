@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["jquery","Public","listload","template"],function(i,t,e,n){i(function(){t.init(),e.listload(n)})})});
+"use strict";require(["config"],function(){require(["jquery","Public","listload","template"],function(i,t,e,n){i(function(){t.init();var i=location.search.substr(1);e.listload(n,i)})})});

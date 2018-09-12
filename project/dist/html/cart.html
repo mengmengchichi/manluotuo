@@ -4,26 +4,59 @@
 		<meta charset="UTF-8">
 		<title>购物流程_漫骆驼-二次元正版电商，购有爱！</title>
 		<link rel="stylesheet" type="text/css" href="/css/cart.css"/>
+		<script src="/libs/require.js" data-main = "/js/cart.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="header"></div>
 		<div class="content">
 			<div class="location">
-				<em>当前位置：</em><a href=""><span>*</span></a>>
+				<em>当前位置：</em><a href="/"><span>首页</span></a>>
 购物流程			
 			</div>
 			<h1>我的购物车</h1>
 		</div>
-		<table>
+		<table class="goods">
 			<thead>
-				<th>选择</th>
-				<th>商品名称</th>
-				<th>市场价</th>
-				<th>本店价</th>
-				<th>购买数量</th>
-				<th>小计</th>
-				<th>操作</th>
+				<tr>
+					<th>选择</th>
+					<th></th>
+					<th>商品名称</th>
+					<th>市场价</th>
+					<th>本店价</th>
+					<th>购买数量</th>
+					<th>小计</th>
+					<th>操作</th>
+				</tr>				
 			</thead>
+			<tbody style="margin-top: 8px;" id="cartbody">
+				<script type="text/html" id="cartcontent">
+					<tr style="background: white;">
+						<td><input type="checkbox" name="choose" id="choose" value="" class="choose"/></td>
+						<td><img src="/images/list/{{data.url}}.jpg" style="width: 100px;height: 100px;"/></td>
+						<td>{{data.introduce}}</td>
+						<td>￥{{data.marketprice}}元</td>
+						<td>￥{{data.nowprice}}元</td>
+						<td><span id="goodscount">{{data.count}}</span></td>
+						<td>￥<span id="total">{{data.count*data.nowprice}}</span>元</td>
+						<td><a href="javascript:;" class="delthis">删除</a></td>
+					</tr>
+				</script>				
+			</tbody>
+		</table>
+		<table class="actioncart">
+			<tr>
+				<td>
+					<input type="button" id="deleteCart" value="删除所选"/>
+					<input type="button" id="emptyCart" value="清空购物车"/>
+					<input type="button" id="updateCart" value="更新购物车"/>
+				</td>
+			</tr>
+			<tr>
+				<td>					
+					<a href="">去结账</a>
+					<a href="/">继续购物</a>
+				</td>
+			</tr>
 		</table>
 		<div id="footer"></div>
 	</body>

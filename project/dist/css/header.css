@@ -140,7 +140,8 @@
       .nav_wrap .nav .kindlist ul {
         position: absolute;
         min-height: 528px;
-        background: #ffffff; }
+        background: #ffffff;
+        z-index: 300; }
         .nav_wrap .nav .kindlist ul li:hover {
           background: #fcf5de; }
         .nav_wrap .nav .kindlist ul li i {

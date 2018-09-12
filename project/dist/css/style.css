@@ -221,7 +221,8 @@ input {
       .nav_wrap .nav .kindlist ul {
         position: absolute;
         min-height: 528px;
-        background: #ffffff; }
+        background: #ffffff;
+        z-index: 300; }
         .nav_wrap .nav .kindlist ul li:hover {
           background: #fcf5de; }
         .nav_wrap .nav .kindlist ul li i {
@@ -333,6 +334,8 @@ input {
             font-size: 12px;
             color: #636971;
             margin-top: 14px; }
+            .links_wrap .links .links_left .handling_btm li a:hover {
+              color: #ff6204; }
           .links_wrap .links .links_left .handling_btm li h4 {
             width: 194px;
             height: 21px;
@@ -405,18 +408,18 @@ input {
 body {
   background: #f5f7fa; }
 
-.concent_wrap {
+.content_wrap {
   width: 100%; }
-  .concent_wrap .concent {
+  .content_wrap .content {
     min-height: 4000px;
     width: 1190px;
     margin-left: auto;
     margin-right: auto; }
-    .concent_wrap .concent .special_area, .concent_wrap .concent .Garage, .concent_wrap .concent .model_area {
+    .content_wrap .content .special_area, .content_wrap .content .Garage, .content_wrap .content .model_area {
       margin-top: 10px;
       background: white;
       height: 710px; }
-      .concent_wrap .concent .special_area p, .concent_wrap .concent .Garage p, .concent_wrap .concent .model_area p {
+      .content_wrap .content .special_area p, .content_wrap .content .Garage p, .content_wrap .content .model_area p {
         height: 51px;
         width: 100%;
         font-size: 17px;
@@ -424,24 +427,24 @@ body {
         line-height: 51px;
         color: #656d78;
         border-bottom: 1px solid #e6e9ed; }
-        .concent_wrap .concent .special_area p a, .concent_wrap .concent .Garage p a, .concent_wrap .concent .model_area p a {
+        .content_wrap .content .special_area p a, .content_wrap .content .Garage p a, .content_wrap .content .model_area p a {
           float: right;
           font-size: 17px;
           padding-right: 33px;
           line-height: 51px;
           color: #656d78; }
-          .concent_wrap .concent .special_area p a:hover, .concent_wrap .concent .Garage p a:hover, .concent_wrap .concent .model_area p a:hover {
+          .content_wrap .content .special_area p a:hover, .content_wrap .content .Garage p a:hover, .content_wrap .content .model_area p a:hover {
             color: #ff6204; }
-      .concent_wrap .concent .special_area ul li, .concent_wrap .concent .Garage ul li, .concent_wrap .concent .model_area ul li {
+      .content_wrap .content .special_area ul li, .content_wrap .content .Garage ul li, .content_wrap .content .model_area ul li {
         float: left;
         margin-left: 10px;
         margin-top: 10px;
         position: relative; }
-      .concent_wrap .concent .special_area ul a, .concent_wrap .concent .Garage ul a, .concent_wrap .concent .model_area ul a {
+      .content_wrap .content .special_area ul a, .content_wrap .content .Garage ul a, .content_wrap .content .model_area ul a {
         display: inline-block;
         width: 100%;
         height: 100%; }
-        .concent_wrap .concent .special_area ul a:hover:before, .concent_wrap .concent .Garage ul a:hover:before, .concent_wrap .concent .model_area ul a:hover:before {
+        .content_wrap .content .special_area ul a:hover:before, .content_wrap .content .Garage ul a:hover:before, .content_wrap .content .model_area ul a:hover:before {
           position: absolute;
           left: 0;
           top: 0;
@@ -450,25 +453,25 @@ body {
           height: 300px;
           border: 5px solid gray;
           opacity: .1; }
-      .concent_wrap .concent .special_area ul li:first-child a:hover:before, .concent_wrap .concent .Garage ul li:first-child a:hover:before, .concent_wrap .concent .model_area ul li:first-child a:hover:before {
+      .content_wrap .content .special_area ul li:first-child a:hover:before, .content_wrap .content .Garage ul li:first-child a:hover:before, .content_wrap .content .model_area ul li:first-child a:hover:before {
         position: absolute;
         left: 0;
         top: 0;
         content: "";
         width: 450px;
         height: 300px; }
-      .concent_wrap .concent .special_area ul li:last-child a:hover:before, .concent_wrap .concent .Garage ul li:last-child a:hover:before, .concent_wrap .concent .model_area ul li:last-child a:hover:before {
+      .content_wrap .content .special_area ul li:last-child a:hover:before, .content_wrap .content .Garage ul li:last-child a:hover:before, .content_wrap .content .model_area ul li:last-child a:hover:before {
         position: absolute;
         left: 0;
         top: 0;
         content: "";
         width: 450px;
         height: 300px; }
-    .concent_wrap .concent .life_area, .concent_wrap .concent .cloth_area, .concent_wrap .concent .cartoon, .concent_wrap .concent .pendant {
+    .content_wrap .content .life_area, .content_wrap .content .cloth_area, .content_wrap .content .cartoon, .content_wrap .content .pendant {
       margin-top: 10px;
       background: white;
       height: 380px; }
-      .concent_wrap .concent .life_area p, .concent_wrap .concent .cloth_area p, .concent_wrap .concent .cartoon p, .concent_wrap .concent .pendant p {
+      .content_wrap .content .life_area p, .content_wrap .content .cloth_area p, .content_wrap .content .cartoon p, .content_wrap .content .pendant p {
         height: 51px;
         width: 100%;
         font-size: 17px;
@@ -476,24 +479,24 @@ body {
         line-height: 51px;
         color: #656d78;
         border-bottom: 1px solid #e6e9ed; }
-        .concent_wrap .concent .life_area p a, .concent_wrap .concent .cloth_area p a, .concent_wrap .concent .cartoon p a, .concent_wrap .concent .pendant p a {
+        .content_wrap .content .life_area p a, .content_wrap .content .cloth_area p a, .content_wrap .content .cartoon p a, .content_wrap .content .pendant p a {
           float: right;
           font-size: 17px;
           padding-right: 33px;
           line-height: 51px;
           color: #656d78; }
-          .concent_wrap .concent .life_area p a:hover, .concent_wrap .concent .cloth_area p a:hover, .concent_wrap .concent .cartoon p a:hover, .concent_wrap .concent .pendant p a:hover {
+          .content_wrap .content .life_area p a:hover, .content_wrap .content .cloth_area p a:hover, .content_wrap .content .cartoon p a:hover, .content_wrap .content .pendant p a:hover {
             color: #ff6204; }
-      .concent_wrap .concent .life_area ul li, .concent_wrap .concent .cloth_area ul li, .concent_wrap .concent .cartoon ul li, .concent_wrap .concent .pendant ul li {
+      .content_wrap .content .life_area ul li, .content_wrap .content .cloth_area ul li, .content_wrap .content .cartoon ul li, .content_wrap .content .pendant ul li {
         float: left;
         margin-left: 10px;
         margin-top: 10px;
         position: relative; }
-      .concent_wrap .concent .life_area ul a, .concent_wrap .concent .cloth_area ul a, .concent_wrap .concent .cartoon ul a, .concent_wrap .concent .pendant ul a {
+      .content_wrap .content .life_area ul a, .content_wrap .content .cloth_area ul a, .content_wrap .content .cartoon ul a, .content_wrap .content .pendant ul a {
         display: inline-block;
         width: 100%;
         height: 100%; }
-        .concent_wrap .concent .life_area ul a:hover:before, .concent_wrap .concent .cloth_area ul a:hover:before, .concent_wrap .concent .cartoon ul a:hover:before, .concent_wrap .concent .pendant ul a:hover:before {
+        .content_wrap .content .life_area ul a:hover:before, .content_wrap .content .cloth_area ul a:hover:before, .content_wrap .content .cartoon ul a:hover:before, .content_wrap .content .pendant ul a:hover:before {
           position: absolute;
           left: 0;
           top: 0;
@@ -502,11 +505,11 @@ body {
           height: 300px;
           border: 5px solid gray;
           opacity: .1; }
-    .concent_wrap .concent .plush {
+    .content_wrap .content .plush {
       margin-top: 10px;
       background: white;
       height: 380px; }
-      .concent_wrap .concent .plush p {
+      .content_wrap .content .plush p {
         height: 51px;
         width: 100%;
         font-size: 17px;
@@ -514,24 +517,24 @@ body {
         line-height: 51px;
         color: #656d78;
         border-bottom: 1px solid #e6e9ed; }
-        .concent_wrap .concent .plush p a {
+        .content_wrap .content .plush p a {
           float: right;
           font-size: 17px;
           padding-right: 33px;
           line-height: 51px;
           color: #656d78; }
-          .concent_wrap .concent .plush p a:hover {
+          .content_wrap .content .plush p a:hover {
             color: #ff6204; }
-      .concent_wrap .concent .plush ul li {
+      .content_wrap .content .plush ul li {
         float: left;
         margin-left: 10px;
         margin-top: 10px;
         position: relative; }
-      .concent_wrap .concent .plush ul a {
+      .content_wrap .content .plush ul a {
         display: inline-block;
         width: 100%;
         height: 100%; }
-        .concent_wrap .concent .plush ul a:hover:before {
+        .content_wrap .content .plush ul a:hover:before {
           position: absolute;
           left: 0;
           top: 0;
@@ -540,38 +543,38 @@ body {
           height: 300px;
           border: 5px solid gray;
           opacity: .1; }
-      .concent_wrap .concent .plush ul li:first-child a:hover:before {
+      .content_wrap .content .plush ul li:first-child a:hover:before {
         position: absolute;
         left: 0;
         top: 0;
         content: "";
         width: 450px;
         height: 300px; }
-      .concent_wrap .concent .plush ul li:last-child a {
+      .content_wrap .content .plush ul li:last-child a {
         display: block;
         position: relative; }
-      .concent_wrap .concent .plush ul li:last-child a:last-child {
+      .content_wrap .content .plush ul li:last-child a:last-child {
         margin-top: 10px; }
-      .concent_wrap .concent .plush ul li:last-child a:first-child:hover:before {
+      .content_wrap .content .plush ul li:last-child a:first-child:hover:before {
         position: absolute;
         left: 0;
         top: 0;
         content: "";
         width: 215px;
         height: 140px; }
-      .concent_wrap .concent .plush ul li:last-child a:last-child:hover:before {
+      .content_wrap .content .plush ul li:last-child a:last-child:hover:before {
         position: absolute;
         left: 0;
         top: 0;
         content: "";
         width: 215px;
         height: 140px; }
-    .concent_wrap .concent .parts_area {
+    .content_wrap .content .parts_area {
       margin-top: 10px;
       background: white;
       height: 390px;
       margin-bottom: 30px; }
-      .concent_wrap .concent .parts_area p {
+      .content_wrap .content .parts_area p {
         height: 51px;
         width: 100%;
         font-size: 17px;
@@ -579,24 +582,24 @@ body {
         line-height: 51px;
         color: #656d78;
         border-bottom: 1px solid #e6e9ed; }
-        .concent_wrap .concent .parts_area p a {
+        .content_wrap .content .parts_area p a {
           float: right;
           font-size: 17px;
           padding-right: 33px;
           line-height: 51px;
           color: #656d78; }
-          .concent_wrap .concent .parts_area p a:hover {
+          .content_wrap .content .parts_area p a:hover {
             color: #ff6204; }
-      .concent_wrap .concent .parts_area ul li {
+      .content_wrap .content .parts_area ul li {
         float: left;
         margin-left: 10px;
         margin-top: 10px;
         position: relative; }
-      .concent_wrap .concent .parts_area ul a {
+      .content_wrap .content .parts_area ul a {
         display: inline-block;
         width: 100%;
         height: 100%; }
-        .concent_wrap .concent .parts_area ul a:hover:before {
+        .content_wrap .content .parts_area ul a:hover:before {
           position: absolute;
           left: 0;
           top: 0;
@@ -605,26 +608,26 @@ body {
           height: 300px;
           border: 5px solid gray;
           opacity: .1; }
-      .concent_wrap .concent .parts_area ul li:last-child a:hover:before {
+      .content_wrap .content .parts_area ul li:last-child a:hover:before {
         position: absolute;
         left: 0;
         top: 0;
         content: "";
         width: 450px;
         height: 300px; }
-      .concent_wrap .concent .parts_area ul li:first-child a {
+      .content_wrap .content .parts_area ul li:first-child a {
         display: block;
         position: relative; }
-      .concent_wrap .concent .parts_area ul li:first-child a:last-child {
+      .content_wrap .content .parts_area ul li:first-child a:last-child {
         margin-top: 10px; }
-      .concent_wrap .concent .parts_area ul li:first-child a:first-child:hover:before {
+      .content_wrap .content .parts_area ul li:first-child a:first-child:hover:before {
         position: absolute;
         left: 0;
         top: 0;
         content: "";
         width: 215px;
         height: 140px; }
-      .concent_wrap .concent .parts_area ul li:first-child a:last-child:hover:before {
+      .content_wrap .content .parts_area ul li:first-child a:last-child:hover:before {
         position: absolute;
         left: 0;
         top: 0;

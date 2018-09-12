@@ -4,22 +4,23 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="/css/detail.css"/>
-		<script type="text/javascript" src="/libs/require.js" data-main="/js/detail.js"></script>
+		<script type="text/javascript" src="/libs/require.js" data-main="/js/details.js"></script>
 	</head>
 	<body>
 		<div id="header"></div>
-		<div class="content_wrap">
-			<div id="content_detail" class="content_detail">
+		<div class="content_wrap" id="content_wrap">
+			<script type="text/html" id="detail">
+				<div id="content_detail" class="content_detail">
 				<div class="now_here">
 					当前位置：<a href="/index.html">首页</a>
 					<code>></code>
 					<a href="javascript:;">手办专区></a>
-					 GSC Saber&摩托车 手办-《Fate ZERO》 良笑社 Saber＆Saber Motored Cuirassier 正版手办 再版
+					 {{data.introduce}}
 				</div>
 				<div class="goods_detail">
 					<div class="goods_preview">
 						<div class="big_preview">
-							<img src="/images/detail-1/3546_P_1495417613383.jpg"/>
+							<img src="{{data.big_preview_url}}"/>
 						</div>
 						<div class="icon_left">
 							<span id="prev"></span>
@@ -29,40 +30,40 @@
 						</div>
 						<div class="small_preview">
 							<ul>
-								<li><img src="/images/detail-1/3546_P_1495417613383.jpg"/></li>
-								<li><img src="/images/detail-1/3546_P_1495417613383.jpg"/></li>
-								<li><img src="/images/detail-1/3546_P_1495417613383.jpg"/></li>
+								<li><img src="/images/detail-1/{{data.small_preview_url1[0]}}.jpg"/></li>
+								<li><img src="/images/detail-1/{{data.small_preview_url1[1]}}.jpg"/></li>
+								<li><img src="/images/detail-1/{{data.small_preview_url1[2]}}.jpg"/></li>
 							</ul>
 						</div>
 					</div>
 					<div class="goods_text">
-						<h2>漫骆驼官方出品 少司命手办-《秦时明月》十周年纪念版手办 myethos 正版</h2>
+						<h2>{{data.introduce}}</h2>
 						<ul>
 							<li>
-								本店售价：<span id="nowprice">￥628.00元</span>
-								<i>商品品牌：<span id="brand">myethos</span></i>
+								本店售价：<span id="nowprice">￥{{data.nowprice}}元</span>
+								<i>商品品牌：<span id="brand">{{data.brand}}</span></i>
 							</li>
 							<li>
-								市场价格：<del id="marketprice">￥628.00元</del>
-								<i>商品库存：<span id="Stock">暂时缺货</span></i>
+								市场价格：<del id="marketprice">￥{{data.marketprice}}元</del>
+								<i>商品库存：<span id="Stock">{{data.status}}</span></i>
 							</li>
 							<li>
 								用户评论：<img src="/images/detail-1/stars5.gif" alt="" />
-								<a href="javascript:;">已有<span id="mancount">0</span>人评论</a>
+								<a href="javascript:;">已有<span id="mancount">{{data.comment}}</span>人评论</a>
 							</li>
 							<li>
-								款式：<a href="javascript:;">现货628</a>
+								款式：<a href="javascript:;">{{data.style}}</a>
 							</li>
-							<li>
+							<li id="quantity">
 								购买数量：
 								<a href="javascript:;"><img src="/images/detail-1/ico_a.gif"/></a>
-								<input type="text" name="count" id="count" value="" />
+								<input type="text" name="count" id="count" value="1" />
 								<a href="javascript:;"><img src="/images/detail-1/ico_b.gif"/></a>
 								<i>商品总价：<span id="
 	Totalprice">￥628.00元</span></i>
 							</li>
-							<li>
-								<img src="/images/detail-1/bnt_cat1.gif"/>
+							<li id="cartaction">
+								<a href=""><img src="/images/detail-1/bnt_cat1.gif"/></a>
 								<a href="javascript:;"><img src="/images/detail-1/bnt_colles.gif"/></a>
 							</li>
 							<li>
@@ -84,8 +85,9 @@
 					<p>常见问题</p>
 				</h2>
 				<div class="jianjie show">
-					<img src="/images/detail-1/30120142QQ.jpg"/>
-					<img src="/images/detail-1/23112041_02.jpg"/>
+					{{each data.jianjie_url1 item index}}
+						<img src="/images/detail-1/{{item}}.jpg"/>
+					{{/each}}
 				</div>
 				<div class="pingjia">
 					<div style="padding:20px;border:1px solid rgb(221,221,221);font: 12px/150% Arial,Verdana;font-weight: 700;color: #666;height:30px;line-height:30px;background-color: #f7f7f7;">							
@@ -95,6 +97,8 @@
 					<img src="/images/detail-1/cj.jpg"/>
 				</div>
 			</div>
+			</script>
+			
 		</div>		
 		<div id="footer"></div>
 	</body>

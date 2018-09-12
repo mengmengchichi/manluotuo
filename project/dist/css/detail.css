@@ -221,7 +221,8 @@ input {
       .nav_wrap .nav .kindlist ul {
         position: absolute;
         min-height: 528px;
-        background: #ffffff; }
+        background: #ffffff;
+        z-index: 300; }
         .nav_wrap .nav .kindlist ul li:hover {
           background: #fcf5de; }
         .nav_wrap .nav .kindlist ul li i {
@@ -333,6 +334,8 @@ input {
             font-size: 12px;
             color: #636971;
             margin-top: 14px; }
+            .links_wrap .links .links_left .handling_btm li a:hover {
+              color: #ff6204; }
           .links_wrap .links .links_left .handling_btm li h4 {
             width: 194px;
             height: 21px;
@@ -501,7 +504,9 @@ input {
             font-size: 18px;
             font-weight: bold;
             color: #ed5f11; }
-          .content_detail .goods_detail .goods_text > ul li span, .content_detail .goods_detail .goods_text > ul li del {
+          .content_detail .goods_detail .goods_text > ul li span {
+            display: inline-block; }
+          .content_detail .goods_detail .goods_text > ul li del {
             display: inline-block;
             width: 97px; }
           .content_detail .goods_detail .goods_text > ul li #mancount {
@@ -521,6 +526,7 @@ input {
           .content_detail .goods_detail .goods_text > ul li:nth-child(4) + li input {
             width: 52px;
             height: 20px;
+            text-align: center;
             border: 1px solid #e6e9ee; }
           .content_detail .goods_detail .goods_text > ul li:nth-child(4) + li a {
             display: inline-block;
@@ -529,6 +535,8 @@ input {
             font-size: 18px;
             font-weight: bold;
             color: #ed5f11; }
+          .content_detail .goods_detail .goods_text > ul li:nth-child(4) + li i {
+            margin-left: 5px; }
           .content_detail .goods_detail .goods_text > ul li:nth-child(4) + li + li {
             margin-top: 26px; }
             .content_detail .goods_detail .goods_text > ul li:nth-child(4) + li + li > img {

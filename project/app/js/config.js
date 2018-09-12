@@ -12,7 +12,10 @@ require.config({
 		"denglu":"module/denglu",
 		"regist":"module/regist",
 		"md5":"libs/md5",
-		"listload":"module/listload"
+		"listload":"module/listload",
+		"detail":"module/detail",
+		"tocart":"module/toCart",
+		"cookie":"module/cookie"
 	},
 	shim: {
 		Public:{
@@ -32,6 +35,15 @@ require.config({
 		},
 		listload:{
 			deps:["jquery","template"]
+		},
+		detail:{
+			deps:["jquery","template"]
+		},
+		tocart:{
+			deps:["jquery","template"]
+		},
+		cookie:{
+			deps:["jquery"]
 		}
 	}
 })

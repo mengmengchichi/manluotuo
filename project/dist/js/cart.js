@@ -1,0 +1,1 @@
+"use strict";require(["config"],function(){require(["jquery","denglu","Public","tocart","template","listload"],function(i,t,n,c,e,r){i(function(){n.init();var i=location.search.substr(1);c.init(e,i),r.listClick(e)})})});

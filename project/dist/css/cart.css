@@ -221,7 +221,8 @@ input {
       .nav_wrap .nav .kindlist ul {
         position: absolute;
         min-height: 528px;
-        background: #ffffff; }
+        background: #ffffff;
+        z-index: 300; }
         .nav_wrap .nav .kindlist ul li:hover {
           background: #fcf5de; }
         .nav_wrap .nav .kindlist ul li i {
@@ -333,6 +334,8 @@ input {
             font-size: 12px;
             color: #636971;
             margin-top: 14px; }
+            .links_wrap .links .links_left .handling_btm li a:hover {
+              color: #ff6204; }
           .links_wrap .links .links_left .handling_btm li h4 {
             width: 194px;
             height: 21px;
@@ -399,6 +402,15 @@ input {
             height: 45px;
             width: 130px; }
 
+.kindlist ul {
+  display: none; }
+
+.blank {
+  height: 60px !important; }
+
+#footer {
+  margin-top: 40px; }
+
 .content {
   width: 1190px;
   border-bottom: 1px solid #ff6f3d;
@@ -423,7 +435,44 @@ table {
   font-size: 14px;
   margin-top: 5px;
   margin-left: 36px; }
-  table thead {
+  table thead tr th {
     height: 30px;
     line-height: 30px;
     text-align: center; }
+  table tbody tr td:last-child a {
+    color: #F60; }
+
+.actioncart tbody tr td {
+  height: 32px;
+  background: white;
+  border-top: 1px solid #CCD1D9;
+  border-bottom: 1px solid #CCD1D9; }
+
+.actioncart input {
+  height: 22px;
+  width: 85px;
+  background: #fe683e;
+  border: none;
+  float: left;
+  margin-left: 8px;
+  color: white;
+  cursor: pointer; }
+
+.actioncart tbody tr:nth-child(2) td {
+  height: 46px;
+  vertical-align: middle;
+  border: none; }
+  .actioncart tbody tr:nth-child(2) td a {
+    display: inline-block;
+    width: 140px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+    border-radius: 8px;
+    color: white; }
+  .actioncart tbody tr:nth-child(2) td a:nth-child(2) {
+    background: #656d78; }
+  .actioncart tbody tr:nth-child(2) td a:nth-child(1) {
+    background: #ff6204; }

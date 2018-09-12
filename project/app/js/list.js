@@ -2,7 +2,8 @@ require(["config"],function(){
 	require(["jquery","Public","listload","template"],function($,Public,list,template){
 		$(function(){
 			Public.init();
-			list.listload(template);
+			var id = location.search.substr(1);
+			list.listload(template,id);			
 			//list.init();
 		})		
 	})
