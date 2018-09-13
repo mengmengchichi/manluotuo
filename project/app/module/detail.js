@@ -78,7 +78,7 @@ define(['cookie'],function(cookieact){
 				for (var j = 0;j<arr.length;j++) {
 					if (arr[j].id == location.search.substr(1)) {
 						arr[j].count = $('#count').val();
-						cookieact.setCookie('cookie',JSON.stringify(arr));
+						cookieact.setCookie('cookie',JSON.stringify(arr),30);
 						var id = location.search.substr(1);
 						$(location).attr('href',"/html/cart.html?"+id+"&"+$('#count').val());
 						return;
@@ -87,14 +87,14 @@ define(['cookie'],function(cookieact){
 				var obj = {
 					id : location.search.substr(1),
 					price : price,
-					count : $('#count').val()
+					count : $('#count').val(),
 				}
 				arr.push(obj);
 				var str = JSON.stringify(arr);
-				cookieact.setCookie('cookie',str);
+				cookieact.setCookie('cookie',str,30);
 				
 				var id = location.search.substr(1);
-				$(location).attr('href',"/html/cart.html?"+id+"&"+$('#count').val());
+				$(location).attr('href',"/html/cart.html?id="+id+"&count="+$('#count').val());
 				//console.log("/html/cart.html?"+id+"&"+$('#count').val()+"");
 			}
 		})

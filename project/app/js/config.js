@@ -19,7 +19,7 @@ require.config({
 	},
 	shim: {
 		Public:{
-			deps:["jquery"]
+			deps:["jquery","cookie","template"]
 		},
 		lunbo:{
 			deps:["jquery"]
@@ -40,7 +40,7 @@ require.config({
 			deps:["jquery","template"]
 		},
 		tocart:{
-			deps:["jquery","template"]
+			deps:["jquery","template","cookie"]
 		},
 		cookie:{
 			deps:["jquery"]

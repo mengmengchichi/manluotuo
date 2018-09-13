@@ -76,6 +76,7 @@ gulp.task("watch", function(){
 	gulp.watch("app/**/*.html",["html"]);
 	gulp.watch("app/scss/**/*.scss",["sass"]);
 	gulp.watch("app/php/*.php",["php"]);
+	gulp.watch('app/images/**/*',['img']);
 });
 
 //处理图片，位置迁移

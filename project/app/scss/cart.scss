@@ -84,3 +84,24 @@ table{
         }
     }
 }
+#cartbody{
+    #nocookie{
+        height: 200px;
+        position: relative;
+    }
+    p{
+        position: absolute;
+        width: 1190px;
+        top: 394px;
+        margin: 0 auto;
+        height: 200px;
+        line-height: 38px;
+        text-align: center;
+        font-size: 18px;
+        color: sandybrown;
+        a{
+            font-size: 14px;
+            color: #FA8072;
+        }
+    }
+}

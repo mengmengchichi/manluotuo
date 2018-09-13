@@ -18,13 +18,13 @@ define(function(){
 	ajaxGetData.prototype.listload = function(template,alist){		
 			var _this = this;
 			var pageCount = 12;
-			var clickNum;					
-			var str = '';
+			var clickNum;								
 			$.get('http://localhost/www/php/list.php',
 			{id:alist,pageCount:pageCount,index:_this.index},function(data){
 			data = JSON.parse(data);
 			var allData = data.alldata;
 			data = data.data;
+//			console.log(data);
 			clickNum = Math.ceil(allData / pageCount);
 			//$(location).attr('href','html/list.html');
 			var listHtml = template("list",{data: data});
@@ -32,34 +32,39 @@ define(function(){
 //			var listPage = template("listPage",{num:clickNum});
 //			$('#pagechange').html(listPage);	
 			_this.listClick();
-		}).done(function(){		
-			if (_this.flag) {
-				str += '<a href="javascript:;" id="goprev">上一页</a>';
-				for (var i = 1;i<=clickNum;i++) {				
-					if (i == 1) {
-						str+='<a href="javascript:;" class = "pageclick">'+ i +'</a>';
-					}else{
-						str+='<a href="javascript:;">'+ i +'</a>';
-					}
-				}
-				str += '<a href="javascript:;" id="gonext">下一页</a>';
-				$('#pagechange').html(str);	
-				if(_this.index == clickNum){
-					$('#gonext').replaceWith('<span id="gonext">下一页</span>');
-				}else{
-					$('#gonext').replaceWith('<a href="javascript:;" id="gonext">下一页</a>');
-				}
-				//判断分页页面是否在上界限上
-				if(_this.index == 1){
-					$("#goprev").replaceWith('<span id = "goprev">上一页</span>');
-				}else{
-					$("#goprev").replaceWith('<a href="javascript:;" id="goprev">上一页</a>');					
-				}
-				_this.init(clickNum,template,alist);
-				_this.flag = false;
-			}			
+			_this.listshow(template,clickNum,alist);
 		})		
 	}
+	ajaxGetData.prototype.listshow = function(template,clickNum,alist){
+		var _this = this;
+		var str = '';
+		if (_this.flag) {
+			str += '<a href="javascript:;" id="goprev">上一页</a>';
+			for (var i = 1;i<=clickNum;i++) {				
+				if (i == 1) {
+					str+='<a href="javascript:;" class = "pageclick">'+ i +'</a>';
+				}else{
+					str+='<a href="javascript:;">'+ i +'</a>';
+				}
+			}
+			str += '<a href="javascript:;" id="gonext">下一页</a>';
+			$('#pagechange').html(str);	
+			if(_this.index == clickNum){
+				$('#gonext').replaceWith('<span id="gonext">下一页</span>');
+			}else{
+				$('#gonext').replaceWith('<a href="javascript:;" id="gonext">下一页</a>');
+			}
+			//判断分页页面是否在上界限上
+			if(_this.index == 1){
+				$("#goprev").replaceWith('<span id = "goprev">上一页</span>');
+			}else{
+				$("#goprev").replaceWith('<a href="javascript:;" id="goprev">上一页</a>');					
+			}
+			_this.init(clickNum,template,alist);
+			_this.flag = false;
+		}
+	}
+	
 	ajaxGetData.prototype.init = function(clickNum,template,alist){
 		var _this = this;
 		$('#pagechange a').on('click',function(){	

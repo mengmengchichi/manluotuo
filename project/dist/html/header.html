@@ -5,7 +5,24 @@
 					<li><a href="javascript:;"><img src="/images/index/small_credit.png"/></a></li>
 					<li><a href="javascript:;"><img src="/images/index/small_return.png"/></a></li>
 					<li><a href="javascript:;"><img src="/images/index/small_mail.png"/></a></li>
-					<li><div id="cart"><a href="/html/cart.html"><img src="/images/index/cart_unfold.png"/></a><span id="thingcount">0</span></div></li>
+					<li>
+						<div id="cart">
+							<a href="/html/cart.html"><img src="/images/index/cart_unfold.png"/></a>
+							<span id="thingcount">0</span>
+							<ul id="showcart">
+								<script type="text/html" id="showcartcon">
+									{{each data item index}}
+										<li>
+											<a href="/html/detail.html"><img src="/images/list/{{item.url}}.jpg"/></a>
+										<a href="/html/detail.html">{{item.introduce}}</a>
+										<span>￥{{item.nowprice}}元*{{item.count}}</span>
+										<a href="javascript:;">删除</a>
+										<li>
+									{{/each}}
+								</script>
+							</ul>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -13,8 +30,8 @@
 			<div class="header">
 				<div class="logo"><a href="/"><img src="/images/index/LOGO.png"/></a></div>
 				<form action="" class="search">
-					<input type="search" placeholder="  请输入关键词" id="keywords"/>
-					<input type="submit" name="search" id="search" value="" />
+					<input type="text" placeholder="  请输入关键词" id="keywords"/>
+					<input type="button" name="search" id="search" value="" />
 					<a href="javascript:;">黏土</a>
 					<a href="javascript:;">saber</a>
 					<a href="javascript:;">lovelive</a>
@@ -58,5 +75,7 @@
 						<li><a href="javascript:;">品牌街</a></li>
 						<li><a href="javascript:;">漫社区</a></li>
 					</ul>
+					<div id="lunboshow"></div>
 				</div>
-			</div>			<div class="blank"></div>
+			</div>			
+			<div class="blank"></div>

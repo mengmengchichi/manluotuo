@@ -16,30 +16,80 @@
     .title{
         width: 1263px;       
         @include center;
-        .title_ul{
+        &>.title_ul{
             li{
                 float: left;
                 height: 48px;         
                 margin-left: 10px;      
                 img{padding-top: 5px;}
             }
-            li:nth-child(1){
+            &>li:nth-child(1){
                 width: 364px;
                 @include font(48px,14px);
                 background: url(../images/index/header_arrow.png) no-repeat right center;
                 letter-spacing: 3px;
             }
-            li:nth-child(2){
+            &>li:nth-child(2){
                 margin-left: 203px;
             }
-            li:nth-last-child(1){
+            &>li:nth-last-child(1){
                 margin-left: 22px;
                 position: relative;
-                span{
+                #thingcount{
                     position: absolute;
                     top: 18px;
                     right: 20px;
-                    color: #ffad52;
+                    color: #ffad52;                   
+                }
+                &:hover ul{
+                    border: 1px solid #ffad52;
+                }
+                ul{            
+                    width: 364px;       
+                    background: white;
+                    position: absolute;
+                    z-index: 500;
+                    right: 0;
+                    top: 44px;
+                    li{
+                        width: 350px;
+                        text-align: center;
+                        color: #999;
+                        @include font(48px,14px);
+                        margin-left: 5px;
+                        height: 44px;
+                        line-height: 44px;
+                        border-bottom: 1px dashed red;
+                        margin-top: 5px;
+                        a{                           
+                            float: left;
+                            margin-left: 14px;
+                            img{width: 30px;height: 30px;}
+                            height: 44px;
+                            font-size: 12px;
+                        }
+                        a:nth-child(2){
+                            display: inline-block;
+                            width: 150px;
+                            font-size: 12px;
+                            line-height: 19px;                          
+                        }
+                        span{
+                            float: left;
+                            display: inline-block;
+                            height: 44px;
+                            margin-left: 20px;
+                            line-height: 44px;
+                            text-align: center;
+                            font-size: 12px;
+                        }
+                        a:last-child{
+                            margin-left: 15px; 
+                            &:hover{
+                                color: #ffad52;
+                            }
+                        }
+                    }
                 }
             }
         }

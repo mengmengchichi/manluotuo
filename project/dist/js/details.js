@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["jquery","Public","template","detail","cookie"],function(i,e,t,n,c){i(function(){e.init();var i=location.search.substr(1);n.indexToDetail(t,i)})})});
+"use strict";require(["config"],function(){require(["jquery","Public","template","detail","cookie"],function(i,e,t,n,c){i(function(){e.init(t);var i=location.search.substr(1);n.indexToDetail(t,i)})})});

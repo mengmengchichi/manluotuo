@@ -30,16 +30,19 @@
 			</thead>
 			<tbody style="margin-top: 8px;" id="cartbody">
 				<script type="text/html" id="cartcontent">
-					<tr style="background: white;">
-						<td><input type="checkbox" name="choose" id="choose" value="" class="choose"/></td>
-						<td><img src="/images/list/{{data.url}}.jpg" style="width: 100px;height: 100px;"/></td>
-						<td>{{data.introduce}}</td>
-						<td>￥{{data.marketprice}}元</td>
-						<td>￥{{data.nowprice}}元</td>
-						<td><span id="goodscount">{{data.count}}</span></td>
-						<td>￥<span id="total">{{data.count*data.nowprice}}</span>元</td>
-						<td><a href="javascript:;" class="delthis">删除</a></td>
-					</tr>
+					{{each data item index}}
+						<tr style="background: white;">
+							<td><input type="checkbox" name="choose" id="choose" value="" class="choose"/></td>
+							<td class="imgurl"><img src="/images/list/{{item.url}}.jpg" style="width: 100px;height: 100px;"/></td>
+							<td>{{item.introduce}}</td>
+							<td>￥{{item.marketprice}}元</td>
+							<td>￥{{item.nowprice}}元</td>
+							<td><span id="goodscount">{{item.count}}</span></td>
+							<td>￥<span id="total">{{item.count*item.nowprice}}</span>元</td>
+							<td><a href="javascript:;" class="delthis">删除</a></td>
+						</tr>
+					{{/each}}
+
 				</script>				
 			</tbody>
 		</table>

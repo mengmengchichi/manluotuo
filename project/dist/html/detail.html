@@ -20,7 +20,7 @@
 				<div class="goods_detail">
 					<div class="goods_preview">
 						<div class="big_preview">
-							<img src="{{data.big_preview_url}}"/>
+							<img src="/images/detail-1/{{data.big_preview_url}}.jpg"/>
 						</div>
 						<div class="icon_left">
 							<span id="prev"></span>
@@ -30,9 +30,9 @@
 						</div>
 						<div class="small_preview">
 							<ul>
-								<li><img src="/images/detail-1/{{data.small_preview_url1[0]}}.jpg"/></li>
-								<li><img src="/images/detail-1/{{data.small_preview_url1[1]}}.jpg"/></li>
-								<li><img src="/images/detail-1/{{data.small_preview_url1[2]}}.jpg"/></li>
+								{{each data.small_preview_url1 item index}}
+									<li><img src="/images/detail-1/{{item}}.jpg"/></li>
+								{{/each}}
 							</ul>
 						</div>
 					</div>
@@ -60,7 +60,7 @@
 								<input type="text" name="count" id="count" value="1" />
 								<a href="javascript:;"><img src="/images/detail-1/ico_b.gif"/></a>
 								<i>商品总价：<span id="
-	Totalprice">￥628.00元</span></i>
+	Totalprice">{{data.nowprice}}元</span></i>
 							</li>
 							<li id="cartaction">
 								<a href=""><img src="/images/detail-1/bnt_cat1.gif"/></a>

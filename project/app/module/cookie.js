@@ -3,7 +3,7 @@ define(function(){
 	Cookie.prototype.setCookie = function(key,value,day){
 		if(day){
 			var d = new Date();
-			d.setDate(date.getDate()+day);
+			d.setDate(d.getDate()+day);
 			document.cookie = key + "=" + value + ";expires=" + d;
 		}else{
 			document.cookie = key + "=" + value;
@@ -24,11 +24,9 @@ define(function(){
 				return "";
 			}	
 		}
-	Cookie.prototype.removeCookie = function(){
+	Cookie.prototype.removeCookie = function(key){
 		this.setCookie(key,"",-1);
-	}		
-			
+	}					
 
-	
 	return new Cookie();
 })

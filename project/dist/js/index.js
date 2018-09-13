@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["jquery","lunbo","header","listload","template","detail"],function(i,t,e,n,r,u){i(function(){e.init(),t.init(),n.listClick(r),u.writeid()})})});
+"use strict";require(["config"],function(){require(["jquery","lunbo","header","listload","template","detail","Public"],function(i,e,t,n,u,l,r){i(function(){t.init(),r.init(u,!0),r.index(u),n.listClick(u),l.writeid()})})});
