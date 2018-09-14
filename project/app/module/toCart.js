@@ -37,15 +37,14 @@ define(['cookie'],function(cookieact){
 				$('#cartbody tr').remove();
 				var thisurl = $(this).parent().parent().find('.imgurl img').attr('src').split('.')[0].split('/');
 				thisurl = thisurl[thisurl.length - 1];
-				console.log(thisurl);
 				for (var j = 0;j<data.length;j++) {
 					if(data[j].url == thisurl){
 						var thisdata = data[j];
 					}
 				}
-				console.log(thisdata);
 				for (var i = 0;i<arr.length;i++) {
 					if (arr[i].id == thisdata.id) {
+						//要将cookie重新设置完成删除cookie的功能
 						cookieact.removeCookie(arr[i]);
 					}
 				}

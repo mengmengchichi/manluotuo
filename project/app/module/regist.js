@@ -34,6 +34,7 @@ define(function(){
 					if (hex_md5($(this).val()) != obj.pwd) {
 						$("#password_ok_notice").html(' - 两次输入密码不一致');
 					}else{
+						$("#password_ok_notice").html('-密码正确');
 						arr[3] = true;
 					}					
 				}

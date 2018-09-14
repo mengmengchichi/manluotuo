@@ -1,5 +1,5 @@
 require(["config"],function(){
-	require(["jquery","denglu","Public","template"],function($,login,Public,template){		
+	require(["jquery","denglu","template","Public"],function($,login,template,Public){		
 		$(function(){
 			login();
 			Public.init(template);

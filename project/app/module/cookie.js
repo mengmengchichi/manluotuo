@@ -1,14 +1,23 @@
+/*
+ 定义cookie对象类型模块
+ 用于cookie操作
+ * 
+ * */
+
 define(function(){
 	function Cookie(){}
-	Cookie.prototype.setCookie = function(key,value,day){
-		if(day){
+	//定义设置cookie函数   参数：字段值 有效时间  存放目录
+	Cookie.prototype.setCookie = function(key,value,day,path){
+		if(day && path){
 			var d = new Date();
 			d.setDate(d.getDate()+day);
-			document.cookie = key + "=" + value + ";expires=" + d;
+			document.cookie = key + "=" + value + ";expires=" + d + '; path=' + path;
 		}else{
 			document.cookie = key + "=" + value;
 		}	
 	}	
+	
+	//定义获取cookie函数  根据主键值获取
 	Cookie.prototype.getCookie = function(key){
 			if(document.cookie){
 				var str = document.cookie;
@@ -24,6 +33,8 @@ define(function(){
 				return "";
 			}	
 		}
+	
+	//定义删除cookie函数  将cookie优效日期改为之前的时间  cookie自动会删除
 	Cookie.prototype.removeCookie = function(key){
 		this.setCookie(key,"",-1);
 	}					

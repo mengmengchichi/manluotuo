@@ -14,27 +14,27 @@ define(function(){
             ol.html(str);
             var btn = ol.children();
             btn.on('mouseover',function(){
-                if(!flag){
+                //if(!flag){
                 	var _this = $(this);
                     flag = true;                     
                     $(this).addClass('ac').siblings().removeClass('ac');
-                    li.eq(index).removeClass('z_index').animate({
+                    li.eq(index).removeClass('z_index').stop().animate({
                     	opacity:0                 
                     },500,function(){
  
                     });
                     index = _this.index();
-                	li.eq(index).addClass('z_index').animate({
+                	li.eq(index).addClass('z_index').stop().animate({
                     opacity:1
                     },500,function(){
                         flag = false;
                     }); 
-                }               
+                //}               
             })
             prev.on('click',function(){
-                if(!flag){
+                //if(!flag){
                     flag = true;
-                    li.eq(index).removeClass('z_index').animate({
+                    li.eq(index).removeClass('z_index').stop().animate({
                     	opacity:0                   
                     },500);
                     index--;                    
@@ -42,37 +42,37 @@ define(function(){
                         index = len -1;
                     }                   
                     btn.eq(index).addClass('ac').siblings().removeClass('ac');                                   
-                    li.eq(index).addClass('z_index').animate({
+                    li.eq(index).addClass('z_index').stop().animate({
                         opacity:1
                     },500,function(){
                         flag = false;
                     });                                       
-                }               
+                //}               
             })
             next.on('click',function(){
-                if(!flag){
+                //if(!flag){
                     flag = true;                   
-                    li.eq(index).removeClass('z_index').animate({
+                    li.eq(index).removeClass('z_index').stop().animate({
                     	opacity:0                   
                     },500);
                     index++;
                     if(index >= len){
                     	index = 0;    	
 	                    btn.eq(index).addClass('ac').siblings().removeClass('ac');
-						li.eq(index).addClass('z_index').animate({
+						li.eq(index).addClass('z_index').stop().animate({
 	                        opacity:1
 	                    },500,function(){
 	                        flag = false;
 	                    }); 
                     }else {
 						btn.eq(index).addClass('ac').siblings().removeClass('ac');                    	
-						li.eq(index).addClass('z_index').animate({
+						li.eq(index).addClass('z_index').stop().animate({
 	                        opacity:1
 	                    },500,function(){
 	                        flag = false;
 	                    });                                        
                     }
-                }
+                //}
             })
             // function auto(){
             //     timer = setInterval(function(){

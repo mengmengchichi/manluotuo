@@ -4,7 +4,8 @@ require(["config"],function(){
 			Public.init(template);
 			var cookie = cookieact.getCookie('cookie');
 			if(cookie != ''){
-				var id = location.search.substr(1)
+				var id = location.search.substr(1).split('&')[0];
+				console.log(id);
 				tocart.init(template,id);
 			}else{
 				var str = '<tr id="nocookie"><td><p>您的购物车里还没有商品，快去采购吧!<a href="/">继续购物</a></p></td></tr>';

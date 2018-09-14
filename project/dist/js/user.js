@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["jquery","denglu","Public","template"],function(i,e,n,u){i(function(){e(),n.init(u)})})});
+"use strict";require(["config"],function(){require(["jquery","denglu","template","Public"],function(i,e,n,u){i(function(){e(),u.init(n)})})});
